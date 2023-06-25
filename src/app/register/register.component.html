@@ -1,0 +1,28 @@
+ <form [formGroup]="myForm" (ngSubmit)="Submited()">
+    <div>
+      <label>
+        Name:
+        <input formControlName="name" placeholder="Your name">
+      </label>
+    </div>
+    <div>
+      <label>
+        Email:
+        <input formControlName="email" placeholder="Your email">
+      </label>
+    </div>
+    <div>
+      <label>
+        Password:
+        <input formControlName="password" placeholder="Your password">
+      </label>
+    </div>
+    <div>
+        <label>
+          Repeat Password:
+          <input formControlName="c_password" placeholder="repeat Your password">
+        </label>
+      </div>
+    <button type="submit">Send</button>
+  </form>
+  
